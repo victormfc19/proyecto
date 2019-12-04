@@ -13,6 +13,8 @@ router.get('/eventos/add', (req,res) => {
     res.render('create/crear');
 });
 
+
+
 router.get('/eventos/view',async (req,res) => {
  const tasks = await Task.find();
     res.render('mostrar',{

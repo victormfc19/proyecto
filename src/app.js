@@ -21,6 +21,7 @@ app.set('views', path.join(__dirname,'views')); //darle la ubicacion al servidor
 app.set('view engine','ejs'); 
 
 // middlewares : funciones que se ejecutan antes de que lleguen a las  rutas
+app.use(express.static("public"));
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended:false})); // para recibir los datos en formato json
 

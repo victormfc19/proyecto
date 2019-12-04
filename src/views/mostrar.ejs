@@ -42,17 +42,17 @@
 
 <body>
 
+       
     <div class="container">
 
         <div class="Encabezado">
 
-            <img src="Imagenes/Logo.png" align=LEFT width="164" height="164">
+            <img src="../../Imagenes/Logo.png" alt="Logo"align=LEFT width="164" height="164"/>
 
         </div>
     </div>
     
-    
-      
+
 
     <table class="table table-bordered table-hover tabla">
         <thead>
@@ -66,6 +66,20 @@
                 <th>Descripcion</th>
             </tr>
         </thead>
+        <tbody>
+            
+            <% for(var i=0; i < tasks.length; i++) { %>
+                <tr>
+                    <td><%=tasks[i].nombre %></td>
+                    <td><%=tasks[i].categoria %></td>
+                    <td><%=tasks[i].lugar %></td>
+                    <td><%=tasks[i].fecha %></td>
+                    <td><%=tasks[i].asistentes %></td>
+                    <td><%=tasks[i].facultad %></td>
+                    <td><%=tasks[i].descripcion %></td>
+                </tr>
+            <% }  %>
+        </tbody>
     </table>
 </body>
 
