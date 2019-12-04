@@ -9,7 +9,7 @@ const ModeloEvento = new Schema({   //Modelo de la base de datos
     fecha: Date,
     asistentes: Number,
     facultad: String,
-    Descripcion: String
+    descripcion: String
 
 })
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PoliEventos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
     <!--Para utilizar la fuente Bree Serif-->
@@ -32,6 +33,10 @@
             height: 100%;
             width: 100%;
         }
+
+        .tabla{
+            margin: 1rem;
+        }
     </style>
 </head>
 
@@ -44,6 +49,24 @@
             <img src="Imagenes/Logo.png" align=LEFT width="164" height="164">
 
         </div>
+    </div>
+    
+    
+      
+
+    <table class="table table-bordered table-hover tabla">
+        <thead>
+            <tr>
+                <th>Nombre del evento</th>
+                <th>Categoria</th>
+                <th>Lugar</th>
+                <th>Fecha</th>
+                <th>Asistentes</th>
+                <th>Facultad</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+    </table>
 </body>
 
 </html>
